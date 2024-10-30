@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-fopenmp",   // Enable OpenMP
+                "main.cpp",   // Your main C++ file
+                "-o",
+                "sparse_matrix_multiplication"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build C++ with OpenMP"
+        }
+    ]
+}
